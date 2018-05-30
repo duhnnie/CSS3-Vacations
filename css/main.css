@@ -1,0 +1,427 @@
+/*main.css*/
+@font-face {
+    font-family: 'CabinRegular';
+    src: url('Cabin-Regular-webfont.eot');
+    src: url('Cabin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cabin-Regular-webfont.woff') format('woff'),
+         url('Cabin-Regular-webfont.ttf') format('truetype'),
+         url('Cabin-Regular-webfont.svg#CabinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ExoDemiBold';
+    src: url('Exo-DemiBold-webfont.eot');
+    src: url('Exo-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Exo-DemiBold-webfont.woff') format('woff'),
+         url('Exo-DemiBold-webfont.ttf') format('truetype'),
+         url('Exo-DemiBold-webfont.svg#ExoDemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@keyframes palmtree-anim1{
+	from{
+		transform: scale(0.8, 0.8) rotate(-5deg);
+	}
+	to{
+		transform: scale(0.8, 0.8) rotate(-10deg);
+	}
+}
+@keyframes palmtree-anim2{
+	from{
+		transform: scale(0.2, 0.2) rotate(5deg);
+	}
+	to{
+		transform: scale(0.2, 0.2) rotate(10deg);
+	}
+}
+@keyframes palmtree-anim3{
+	from{
+		transform: scale(0.6, 0.6) rotate(10deg);
+	}
+	to{
+		transform: scale(0.6, 0.6) rotate(5deg);
+	}
+}
+@keyframes bote-anim{
+	from{
+		left:-10%;
+	}
+	to{
+		left: 105%;
+	}
+}
+@keyframes gaviota-anim{
+	from{
+		left: 100%;
+	}
+	23%{
+		top: 50%;
+	}
+	28%{
+		top: 55%;
+	}
+	33%{
+		top: 50%;
+	}
+	60%{
+		top: 45%;
+	}
+	90%{
+		top: 50%;
+	}
+	to{
+		left: -5%;
+	}
+}
+@-webkit-keyframes palmtree-anim1{
+	from{
+		-webkit-transform: scale(0.8, 0.8) rotate(-5deg);
+	}
+	to{
+		-webkit-transform: scale(0.8, 0.8) rotate(-10deg);
+	}
+}
+@-webkit-keyframes palmtree-anim2{
+	from{
+		-webkit-transform: scale(0.2, 0.2) rotate(5deg);
+	}
+	to{
+		-webkit-transform: scale(0.2, 0.2) rotate(10deg);
+	}
+}
+@-webkit-keyframes palmtree-anim3{
+	from{
+		-webkit-transform: scale(0.6, 0.6) rotate(10deg);
+	}
+	to{
+		-webkit-transform: scale(0.6, 0.6) rotate(5deg);
+	}
+}
+@-webkit-keyframes bote-anim{
+	from{
+		left:-10%;
+	}
+	to{
+		left: 105%;
+	}
+}
+@-webkit-keyframes gaviota-anim{
+	from{
+		left: 100%;
+	}
+	23%{
+		top: 50%;
+	}
+	28%{
+		top: 55%;
+	}
+	33%{
+		top: 50%;
+	}
+	60%{
+		top: 45%;
+	}
+	90%{
+		top: 50%;
+	}
+	to{
+		left: -5%;
+	}
+}
+
+@-moz-keyframes palmtree-anim1{
+	from{
+		-moz-transform: scale(0.8, 0.8) rotate(-5deg);
+	}
+	to{
+		-moz-transform: scale(0.8, 0.8) rotate(-10deg);
+	}
+}
+@-moz-keyframes palmtree-anim2{
+	from{
+		-moz-transform: scale(0.2, 0.2) rotate(5deg);
+	}
+	to{
+		-moz-transform: scale(0.2, 0.2) rotate(10deg);
+	}
+}
+@-moz-keyframes palmtree-anim3{
+	from{
+		-moz-transform: scale(0.6, 0.6) rotate(10deg);
+	}
+	to{
+		-moz-transform: scale(0.6, 0.6) rotate(5deg);
+	}
+}
+@-moz-keyframes bote-anim{
+	from{
+		left:-10%;
+	}
+	to{
+		left: 105%;
+	}
+}
+@-moz-keyframes gaviota-anim{
+	from{
+		left: 100%;
+	}
+	23%{
+		top: 50%;
+	}
+	28%{
+		top: 55%;
+	}
+	33%{
+		top: 50%;
+	}
+	60%{
+		top: 45%;
+	}
+	90%{
+		top: 50%;
+	}
+	to{
+		left: -5%;
+	}
+}
+
+html, body{
+	font-family: 'CabinRegular';
+    padding: 0px;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+	color: #444;
+} 
+iframe, #___plusone_0{
+	vertical-align: baseline;
+}
+#contenido{
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(top, #5192B8 0%, #BED3DF 61.833%, #045159 61.834%, #03646B 64.147%, #079CBC 100%);
+	background: -webkit-linear-gradient(top, #5192B8 0%, #BED3DF 61.833%, #045159 61.834%, #03646B 64.147%, #079CBC 100%);
+	background: -moz-linear-gradient(top, #5192B8 0%, #BED3DF 61.833%, #045159 61.834%, #03646B 64.147%, #079CBC 100%);
+	background: -o-linear-gradient(top, #5192B8 0%, #BED3DF 61.833%, #045159 61.834%, #03646B 64.147%, #079CBC 100%);
+}
+.palmtree{
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+}
+.gaviota, .boat, .palmtree{
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+}
+#tierra > div.palmtree.back{
+	position: absolute;
+	top: 0%;
+	left: 80%;
+	margin-top: -650px;
+	transform-origin: 100px 670px;
+	transform: scale(0.2, 0.2) rotate(5deg);
+	animation-name: palmtree-anim2;
+	animation-duration: 4s;
+	animation-delay: 0.8s;
+	-webkit-transform-origin: 100px 670px;
+	-webkit-transform: scale(0.2, 0.2) rotate(5deg);
+	-webkit-animation-name: palmtree-anim2;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-delay: 0.8s;
+	-moz-transform-origin: 100px 670px;
+	-moz-transform: scale(0.2, 0.2) rotate(5deg);
+	-moz-animation-name: palmtree-anim2;
+	-moz-animation-duration: 4s;
+	-moz-animation-delay: 0.8s;
+	-o-transform-origin: 100px 670px;
+	-o-transform: scale(0.2, 0.2) rotate(5deg);
+}
+#tierra{
+	position: absolute;
+	top: 75%;
+	left: 100%;
+	margin-left: -1296px;
+	width: 1300px;
+	height: 40%;
+}
+#tierra > div:first-child{
+	position: relative;
+	top: 0px;
+	height: 100%;
+	border-top-left-radius: 76% 100%;
+	border-top-right-radius: 24% 6.092%;
+	background: -webkit-linear-gradient(left, #FBC644 0%, #EC854B 100%);
+	background: -moz-linear-gradient(left, #FBC644 0%, #EC854B 100%);
+	background: -o-linear-gradient(left, #FBC644 0%, #EC854B 100%);
+	z-index: 10;
+}
+#tierra > div:first-child >.palmtree:nth-of-type(1){
+	top: -600px;
+	left: 25%;
+	transform-origin: 100px 1000px;
+	transform: scale(0.6, 0.6) rotate(10deg);
+	animation-name: palmtree-anim3;
+	animation-duration: 8s;
+	animation-delay: 3.3s;
+	-webkit-transform-origin: 100px 1000px;
+	-webkit-transform: scale(0.6, 0.6) rotate(10deg);
+	-webkit-animation-name: palmtree-anim3;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-delay: 3.3s;
+	-moz-transform-origin: 100px 1000px;
+	-moz-transform: scale(0.6, 0.6) rotate(10deg);
+	-moz-animation-name: palmtree-anim3;
+	-moz-animation-duration: 8s;
+	-moz-animation-delay: 3.3s;
+	-o-transform-origin: 100px 1000px;
+	-o-transform: scale(0.6, 0.6) rotate(10deg);
+}
+#tierra > div:first-child >.palmtree:nth-of-type(2){
+	top: -550px;
+	left: 70%;
+	transform-origin: 100px 1000px;
+	transform: scale(0.8, 0.8) rotate(-10deg);
+	animation-name: palmtree-anim1;
+	animation-duration: 6s;
+	-webkit-transform-origin: 100px 1000px;
+	-webkit-transform: scale(0.8, 0.8) rotate(-10deg);
+	-webkit-animation-name: palmtree-anim1;
+	-webkit-animation-duration: 6s;
+	-moz-transform-origin: 100px 1000px;
+	-moz-transform: scale(0.8, 0.8) rotate(-10deg);
+	-moz-animation-name: palmtree-anim1;
+	-moz-animation-duration: 6s;
+	-o-transform-origin: 100px 1000px;
+	-o-transform: scale(0.8, 0.8) rotate(-10deg);
+}
+.sol{
+	transform: scale(0.6, 0.6);
+	-webkit-transform: scale(0.6, 0.6);
+	-moz-transform: scale(0.6, 0.6);
+	-o-transform: scale(0.6, 0.6);
+	left: 12%;
+	top: 80px;
+}
+.sol > div
+{
+	box-shadow: 0px 0px 800px rgba(232, 228, 105, 1),
+		0px 0px 800px rgba(232, 228, 105, 1),
+		0px 0px 800px rgba(232, 228, 105, 1);
+}
+.boat{
+	position: absolute;
+	transform-origin: 0% 0%;
+	transform: scale(0.35, 0.35);
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform: scale(0.35, 0.35);
+	-moz-transform-origin: 0% 0%;
+	-moz-transform: scale(0.35, 0.35);
+	-o-transform-origin: 0% 0%;
+	-o-transform: scale(0.35, 0.35);
+	top: 62%;
+	left: 100px;
+	margin-top: -70px;
+	animation-name: bote-anim;
+	animation-duration: 180s;
+	animation-delay: -12s;
+	animation-timing-function: linear;
+	-webkit-animation-name: bote-anim;
+	-webkit-animation-duration: 180s;
+	-webkit-animation-delay: -12s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: bote-anim;
+	-moz-animation-duration: 180s;
+	-moz-animation-delay: -12s;
+	-moz-animation-timing-function: linear;
+}
+.gaviota{
+	position: absolute;
+	top: 50%;
+	transform: scale(0.2, 0.2);
+	animation-name: gaviota-anim;
+	animation-duration: 90s;
+	animation-timing-function: linear;
+	-webkit-transform: scale(0.2, 0.2);
+	-webkit-animation-name: gaviota-anim;
+	-webkit-animation-duration: 90s;
+	-webkit-animation-timing-function: linear;
+	-moz-transform: scale(0.2, 0.2);
+	-moz-animation-name: gaviota-anim;
+	-moz-animation-duration: 90s;
+	-moz-animation-timing-function: linear;
+	-o-transform: scale(0.2, 0.2);
+}
+.gaviota:nth-child(2){
+	animation-delay: -4s;
+	-webkit-animation-delay: -4s;
+	-moz-animation-delay: -4s;
+}
+.gaviota:nth-child(3), .gaviota:nth-child(4){
+	animation-delay: -40s;
+	-webkit-animation-delay: -40s;
+	-moz-animation-delay: -40s;
+}
+.gaviota:nth-child(4){
+	animation-delay: -80s;
+	-webkit-animation-delay: -80s;
+	-moz-animation-delay: -80s;
+}
+.gaviota:nth-child(5){
+	animation-delay: -31s;
+	-webkit-animation-delay: -31s;
+	-moz-animation-delay: -31s;
+}
+.gaviota:nth-child(6){
+	animation-delay: -63s;
+	-webkit-animation-delay: -63s;
+	-moz-animation-delay: -63s;
+}
+#social-bar, #credits{
+	border-radius: 7px;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	padding: 5px;
+	z-index: 100;
+}
+#credits{
+	bottom: 10px;
+	width: 180px;
+	right: 5px;
+	text-align: left;
+}
+#credits, #credits a:link, #credits a:visited{
+	font-size: 1em;
+	text-decoration: none;
+	color: #444;;
+}
+#credits a{
+	font-weight: bold;
+}
+#social-bar{
+	width: 390px;
+	top: 5px;
+	right: 260px;
+}
+#title{
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	font-family: 'ExoDemiBold';
+	font-size: 40px;
+	width: 250px;
+	text-align: right;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 0px rgba(200, 200, 200, 0.5),
+		2px 2px 0px rgba(150, 150, 150, 0.3),
+		3px 3px 0px rgba(100, 100, 100, 0.1);
+	z-index: 90;
+}
+#title div{
+	margin-top: 10px;
+	font-size: 0.4em;
+}

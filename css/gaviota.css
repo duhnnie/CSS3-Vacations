@@ -1,0 +1,114 @@
+@keyframes gav-anim1{
+	from{
+		transform: rotate(-20deg);
+	}
+	to{
+		transform: rotate(10deg);
+	}
+}
+@keyframes gav-anim2{
+	from{
+		transform: rotate(20deg);
+	}
+	to{
+		transform: rotate(-10deg);
+	}
+}
+@-webkit-keyframes gav-anim1{
+	from{
+		-webkit-transform: rotate(-20deg);
+	}
+	to{
+		-webkit-transform: rotate(10deg);
+	}
+}
+@-webkit-keyframes gav-anim2{
+	from{
+		-webkit-transform: rotate(20deg);
+	}
+	to{
+		-webkit-transform: rotate(-10deg);
+	}
+}
+@-moz-keyframes gav-anim1{
+	from{
+		-moz-transform: rotate(-20deg);
+	}
+	to{
+		-moz-transform: rotate(10deg);
+	}
+}
+@-moz-keyframes gav-anim2{
+	from{
+		-moz-transform: rotate(20deg);
+	}
+	to{
+		-moz-transform: rotate(-10deg);
+	}
+}
+
+.gaviota{
+	width: 15px;
+	height: 10px;
+	background-color: #333;
+	border-radius: 50% 60% 55% 52%;
+	border-top-right-radius: 50% 20%;
+	border-bottom-right-radius: 36% 80%;
+}
+.gaviota > div{
+	top: -10px;
+	left: 0px;
+	position: absolute;
+	height: 50px;
+	border-radius: 50% 50% 0 0 ;
+	border-top: 5px #333 solid;
+	width: 50px;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+}
+.gaviota > div:nth-of-type(1){
+	transform-origin: 0% 10%;
+	animation-name: gav-anim1;
+    animation-timing-function: easeinout;
+	-webkit-transform-origin: 0% 10%;
+	-webkit-animation-name: gav-anim1;
+    -webkit-animation-timing-function: easeinout;
+    -moz-transform-origin: 0% 10%;
+	-moz-animation-name: gav-anim1;
+    -moz-animation-timing-function: easeinout;
+}
+.gaviota > div:nth-of-type(2){
+	top: -10px;
+	left: -40px;
+	transform-origin: 100% 10%;
+	animation-name: gav-anim2;
+    animation-timing-function: linear;
+	-webkit-transform-origin: 100% 10%;
+	-webkit-animation-name: gav-anim2;
+    -webkit-animation-timing-function: linear;
+    -moz-transform-origin: 100% 10%;
+	-moz-animation-name: gav-anim2;
+    -moz-animation-timing-function: linear;
+}
+.gaviota:nth-child(2) > div{
+	animation-delay: 1.7s;
+	-webkit-animation-delay: 1.7s;
+	-moz-animation-delay: 1.7s;
+}
+.gaviota:nth-child(5) > div{
+	animation-delay: 0.7s;	
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;	
+}
+.gaviota:nth-child(3) > div, .gaviota:nth-child(6) > div{
+	animation-delay: -3.37s;
+	-webkit-animation-delay: -3.37s;
+	-moz-animation-delay: -3.37s;
+}
